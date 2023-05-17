@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+.resumeContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 20px auto;
+}
+.resumeContainer form {
+  width: 26%;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 10px 10px 0 10px;
+}
+.resumeContainer form .formGroup {
+  margin-bottom: 14px;
+}
+.resumeContainer form .formGroup label {
+  display: block;
+  margin-bottom: 8px;
+}
+.resumeContainer form .formGroup input:focus,
+.resumeContainer form .formGroup textarea:focus {
+  outline: none;
+  box-shadow: none;
+}
+.resumeContainer form .formGroup input,
+.resumeContainer form .formGroup textarea {
+  display: block;
+  padding: 10px 20px;
+  width: 100%;
+  border: 1px solid #000;
+  border-radius: 6px;
+}
+
+.flexWrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.w-100 {
+  width: 100% !important;
+}
+.flexWrapper .single {
+  width: 48%;
+  margin-bottom: 10px;
+}
+
+.resumePreview {
+  width: 73%;
+  border: 1px solid #000;
+  border-radius: 10px;
+  position: relative;
+  height: 100%;
+  min-height: 100vh;
+}
+img {
+  width: 100%;
+}
+.topHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #000;
+}
+.topHeader img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: #000;
+}
+.topHeader h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.topHeader p {
+  font-size: 12px;
+  font-weight: 300;
+}
+.experienceContainer {
+  padding: 10px 10px;
+  border-bottom: 1px solid #000;
+}
+
+.experienceContainer .row {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.experienceContainer .row .single {
+  width: 33%;
+  margin-bottom: 10px;
+}
+.experienceContainer h6 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.row .heading {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.row .dateContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.row .dateContainer p {
+  margin-right: 10px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.formGroup .add {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.formGroup .add span {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  background-color: #ccc;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+}

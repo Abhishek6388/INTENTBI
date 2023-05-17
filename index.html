@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="resumeContainer">
+      <form action="" autocomplete="off">
+        <div class="formGroup">
+          <label for="">Picture</label>
+          <input type="file" class="form-input picture" />
+        </div>
+    
+        <div class="formGroup">
+          <label for="">Full Name</label>
+          <input
+            type="text"
+            class="form-input"
+            onkeypress="addText(this.value, 'fullName')"
+          />
+        </div>
+        <div class="formGroup">
+          <label for="">Email</label>
+          <input
+            type="text"
+            class="form-input"
+            onkeypress="addText(this.value, 'email')"
+          />
+        </div>
+        <div class="formGroup">
+          <label for="">Mobile Number</label>
+          <input
+            type="number"
+            class="form-input"
+            onkeypress="addText(this.value, 'mobileNumber')"
+          />
+        </div>
+        <div class="formGroup">
+          <label for="">Carrer Objective</label>
+          <textarea
+            rows="5"
+            class="form-input"
+            onkeypress="addText(this.value, 'carrerObjective')"
+          ></textarea>
+        </div>
+        
+        <div class="formGroup">
+          <div class="add">
+            <h4>Experience</h4>
+            <span onclick="addExperience()">+</span>
+          </div>
+          <div class="flexWrapper">
+            <div class="single w-100">
+              <label for="">Company Name</label>
+              <input type="text" class="form-input companyName" />
+            </div>
+            <div class="single">
+              <label for="">Start Date</label>
+              <input type="date" class="form-input startDate" />
+            </div>
+            <div class="single">
+              <label for="">End Date</label>
+              <input type="date" class="form-input endData" />
+            </div>
+          </div>
+        </div>
+        <div class="formGroup">
+          <div class="add">
+            <h4>Education</h4>
+            <span onclick="addEducation()">+</span>
+          </div>
+          <div class="flexWrapper">
+            <div class="single w-100">
+              <label for="">Course/Degree Name</label>
+              <input type="text" class="form-input degreeName" />
+            </div>
+            <div class="single">
+              <label for="">Start Date</label>
+              <input type="date" class="form-input degreeStart" />
+            </div>
+            <div class="single">
+              <label for="">End Date</label>
+              <input type="date" class="form-input degreeEnd" />
+            </div>
+          </div>
+
+          <div class="formGroup">
+            <div class="add">
+              <h4>Skills</h4>
+              <span>+</span>
+            </div>
+            <input type="text" class="form-input" />
+          </div>
+        </div>
+      </form>
+
+      <div class="resumePreview">
+        <div class="topHeader">
+          <div class="info">
+            <h4 id="fullName">User name</h4>
+            <p id="email">email@gamil.com</p>
+            <p id="mobileNumber">1234567898</p>
+          </div>
+          <img src="" alt="" class="img" />
+        </div>
+
+        <div class="experienceContainer">
+          <h6>Carrer Objective</h6>
+          <p id="carrerObjective"></p>
+        </div>
+        <div class="experienceContainer">
+          <h6>Experience</h6>
+          <div class="row" id="companyContainer"></div>
+        </div>
+
+        <div class="experienceContainer">
+          <h6>Education</h6>
+          <div class="row" id="educationContainer"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
